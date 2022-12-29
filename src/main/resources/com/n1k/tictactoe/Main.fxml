@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1000.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.n1k.tictactoe.Controller">
+   <children>
+      <GridPane gridLinesVisible="true" layoutX="200.0" layoutY="125.0" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: transparent;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="200.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Button fx:id="btn1" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#fill" wrapText="true">
+               <font>
+                  <Font name="STIX Two Math Regular" size="96.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn9" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#fill" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="STIX Two Math Regular" size="96.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn8" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#fill" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="STIX Two Math Regular" size="96.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn6" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#fill" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="STIX Two Math Regular" size="96.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn3" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#fill" wrapText="true" GridPane.columnIndex="2">
+               <font>
+                  <Font name="STIX Two Math Regular" size="96.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn5" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#fill" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="STIX Two Math Regular" size="96.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn7" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#fill" wrapText="true" GridPane.rowIndex="2">
+               <font>
+                  <Font name="STIX Two Math Regular" size="96.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn4" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#fill" wrapText="true" GridPane.rowIndex="1">
+               <font>
+                  <Font name="STIX Two Math Regular" size="96.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn2" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#fill" wrapText="true" GridPane.columnIndex="1">
+               <font>
+                  <Font name="STIX Two Math Regular" size="96.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Label fx:id="Text" alignment="CENTER" layoutX="241.0" layoutY="55.0" prefHeight="40.0" prefWidth="518.0" text="PLAYER 1 GOES FIRST!">
+         <font>
+            <Font name="STIX Two Math Regular" size="29.0" />
+         </font>
+      </Label>
+      <Button layoutX="400.0" layoutY="755.0" mnemonicParsing="false" onAction="#resetIsClicked" prefHeight="70.0" prefWidth="200.0" text="RESET" wrapText="true">
+         <font>
+            <Font name="STIX Two Math Regular" size="41.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
